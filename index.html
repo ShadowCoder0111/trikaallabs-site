@@ -360,6 +360,61 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:1200px){.hero-orb{display:none;}.svc-grid{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}}
 @media(max-width:900px){.hero{padding:calc(var(--nav-h)+48px) 28px 72px;}.cat-section,.sec,.adv-section,.process-section,.workflow-section,.cta-section,.tech-section,.case-section,.ai-systems-section{padding:72px 28px;}.hero-stats{gap:24px;padding-top:24px;}.cat-header{grid-template-columns:8px 1fr;}.cat-cta{display:none;}.adv-grid,.ai-systems-grid{grid-template-columns:1fr;}.process-line{grid-template-columns:1fr 1fr;}.csb-sep,.csb-close{display:none;}}
 @media(max-width:640px){.svc-grid,.workflow-cards,.tech-items,.case-grid{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr;}.cf-row{grid-template-columns:1fr;}.nav-links{display:none;}.cta-sticky-bar{gap:14px;padding:0 16px;}.csb-text{font-size:9px;}.csb-btn{padding:9px 18px;font-size:8px;}}
+
+/* ===== Mobile Optimization Patch ===== */
+@media (max-width:768px){
+  body{
+    cursor:auto;
+  }
+
+  .cur,
+  .cur-ring{
+    display:none;
+  }
+
+  .hero{
+    padding:calc(var(--nav-h) + 40px) 20px 60px;
+  }
+
+  .svc-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .nav-links{
+    display:flex;
+    gap:12px;
+    font-size:8px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
+
+
+/* ===== Readability Improvements for Logo & Hero ===== */
+.hero-title .t1{
+color:#FFFFFF;
+text-shadow:
+0 0 6px rgba(0,0,0,.6),
+0 0 12px rgba(0,0,0,.6);
+}
+
+.hero-title .t2{
+filter:drop-shadow(0 0 6px rgba(0,0,0,.7));
+}
+
+.logo-text{
+color:#FFFFFF;
+text-shadow:
+0 0 4px rgba(0,0,0,.8),
+0 0 10px rgba(0,0,0,.7);
+}
+
+.hero-sub{
+color:#cfdfff;
+}
+
 </style>
 </head>
 <body>
@@ -693,7 +748,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
   <p class="cta-sub reveal">Book a free 30-minute AI Audit. No pitch, no pressure.<br/>Just clarity on what AI can actually do for your business.</p>
   <div class="cta-btns reveal">
     <a href="#contact" class="btn-cyber">→ Book Free AI Audit</a>
-    <a href="https://wa.me/919876543210" class="wa-btn" rel="noopener">💬 WhatsApp Us</a>
+    <a href="https://wa.me/919404631441" class="wa-btn" rel="noopener">💬 WhatsApp Us</a>
   </div>
   <div class="reveal" style="margin-top:22px;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:2px;">RESPONSE IN &lt; <span style="color:var(--cyan)">2 HOURS</span> · PUNE, INDIA · SERVING CLIENTS ACROSS <span style="color:var(--cyan)">INDIA</span></div>
 
@@ -756,7 +811,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="f-col-title">Contact</div>
       <div class="f-col-links">
         <a href="mailto:hello@trikaallabs.com">hello@trikaallabs.com</a>
-        <a href="https://wa.me/919876543210" rel="noopener">WhatsApp Us</a>
+        <a href="https://wa.me/919404631441" rel="noopener">WhatsApp Us</a>
         <a href="#contact">Book Free Audit</a>
         <span style="color:var(--muted2)">Pune, Maharashtra, India</span>
       </div>
